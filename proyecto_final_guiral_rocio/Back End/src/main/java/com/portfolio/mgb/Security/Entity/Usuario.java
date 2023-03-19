@@ -45,7 +45,7 @@ public class Usuario {
         this.nombre = nombre;
         this.nombreUsuario = nombreUsuario;
         this.email = email;
-        this.pasword = pasword;
+        this.password = pasword;
     }
     
     //getters y setters
@@ -83,11 +83,11 @@ public class Usuario {
     }
 
     public String getPasword() {
-        return pasword;
+        return password;
     }
 
-    public void setPasword(String pasword) {
-        this.pasword = pasword;
+    public void setPasword(String password) {
+        this.password = password;
     }
 
     public Set<Rol> getRoles() {
