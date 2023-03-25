@@ -7,7 +7,7 @@ import { TokenService } from "./token.service";
     providedIn: 'root'
 })
 export class InterceptorService {
-    constructor(private tokenService = TokenService){}
+    constructor(private tokenService: TokenService){}
 
     intercept(req: HttpRequest<any>, next: HttpHandler): Observable<HttpEvent<any>>{
         let intReq = req;
@@ -23,6 +23,5 @@ export class InterceptorService {
 
 export const interceptorProvider = [{
     provide: HTTP_INTERCEPTORS,
-    userClass: InterceptorService,
-    multi: true
-}];
+    useClass: InterceptorService,
+    multi: true }];

@@ -26,6 +26,6 @@ export class LogoAPComponent implements OnInit {
   }
 
   login(){
-    this.router.navigate(['/login'])
+    this.router.navigate(['/login']);
   }
 }
