@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/proyecto_final_guiral_rocio",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
